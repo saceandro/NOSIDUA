@@ -14,10 +14,6 @@ import experimentUtil
 def main():
     N = 5
     M = 2
-#    obs_file = "../data/Lorenz96/N_"\
-#         + str(N) + "/p_" + str(true_p) + "/p2_" + str(true_p[1])\
-#         + "/obsvar_" + str(obs_variance) +  "/obsiter_" + str(it) + "/dt_" + str(dt)\
-#         + "/seed_" + str(seed) + "/observed.head_101.tsv"    
     lorenz = model4DVar.Lorenz96(N, M)
 
     true_p = np.array([8., 1.])
