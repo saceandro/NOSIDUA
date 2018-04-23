@@ -1,5 +1,8 @@
 **4D-Var (Adjoint and Second order adjoint method)**
 ---
+## Requirements
+Scipy, Numpy, Matplotlib
+
 ## Write your model
 Edit src/model4DVar.py and fill in the blanks of calc_dxdt, calc_jacobian, and calc_hessian methods in the Model class.
 
