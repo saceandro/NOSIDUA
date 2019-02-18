@@ -1,4 +1,5 @@
-** Nonlinear System IDentification with Uncertainty Assessment (NOSIDUA) **
+# Nonlinear System IDentification with Uncertainty Assessment (NOSIDUA)
+
 ---
 ## Requirements
 Python3
