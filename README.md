@@ -2,7 +2,6 @@
 
 Nonlinear System IDentification with Uncertainty Assessment
 
----
 ## Requirements
 Python3
 
