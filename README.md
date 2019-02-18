@@ -1,6 +1,6 @@
 # NOSIDUA
 
-Nonlinear System IDentification with Uncertainty Assessment
+NOnlinear dynamical System IDentification with Uncertainty Assessment
 
 ## Requirements
 Python3
