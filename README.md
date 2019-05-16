@@ -18,3 +18,4 @@ Then, initial guesses for initial state and parameters will be generated using u
 An example of Lorenz96 data assimilation can be seen in src/discrete4DVarMain.py.
 
 ## Demo
+You can run demo in the jupyternotes/demo.ipynb
