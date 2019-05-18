@@ -17,5 +17,9 @@ Furthermore, you can use initial_guess_bounds to restrict the initial guess.
 Then, initial guesses for initial state and parameters will be generated using uniform distribution within initial_guess_bounds in each trials.
 An example of Lorenz96 data assimilation can be seen in src/discrete4DVarMain.py.
 
+## Usage
+$ cd src
+$ ./twinExperiment.py
+
 ## Demo
 You can run demo in the jupyternotes/demo.ipynb
