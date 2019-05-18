@@ -19,6 +19,7 @@ An example of Lorenz96 data assimilation can be seen in src/discrete4DVarMain.py
 
 ## Usage
 $ cd src
+
 $ ./twinExperiment.py
 
 ## Demo
