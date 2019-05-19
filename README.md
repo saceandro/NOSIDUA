@@ -53,12 +53,13 @@ Plotting utilities.
 You can run demo in the jupyternotes/demo.ipynb
 
 ## Usage
+```
 $ cd src
-
 $ ./twinExperiment.py
+```
 
 ## Extract from Output
-<pre>
+```
 estiamted initial state:	 [ 1.43098772  4.78592118  2.83295792 -3.17975449 -0.29395921]
 true initial state:	 [ 1.23733235  4.84913358  3.32737079 -2.91346056 -0.66036993]
 1 sigma confidence interval:	 [0.48049188 0.41684461 0.41306967 0.52146088 0.22912386]
@@ -83,4 +84,4 @@ initial state and parameter covariance:
  [-0.00323906 -0.00690069  0.00402759  0.00510177 -0.00448569 -0.0050174
    0.00171005]]
 mean RMSE around interval center:  0.1860385076639236
-</pre>
+```
