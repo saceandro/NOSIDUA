@@ -2,7 +2,7 @@
 
 NOnlinear dynamical System IDentification with Uncertainty Assessment
 
-## Algorithm
+## Formulation and algorithm
 See algorithm.pdf.
 
 ## Requirements
@@ -27,19 +27,19 @@ ODE system with parameters.
 
 * discrete4DVar.py
 
-Core Adjoint class for initial states (x_0^((0)),…,x_(N-1)^((0))) and parameters (p_0, p_1) estimation.
+Core Adjoint class for initial states and parameters estimation.
 
 * discrete4DVarMain.py
 
-Estimate initial states (x_0^((0)),…,x_(N-1)^((0))) and parameters (p_0, p_1) given observed data file.
+Estimate initial states and parameters given observed data file.
 
 * twinExperiment.py
 
-First, generate observed data using given model, true initial states, and parameters with white noise. Then estimate initial states (x_0^((0)),…,x_(N-1)^((0))) and parameters (p_0, p_1) given generated observed data. Estimated result is shown compared to the true initial state and parameters.
+First, generate observed data using given model, true initial states, and parameters with white noise. Then estimate initial states and parameters given generated observed data. Estimated result is shown compared to the true initial state and parameters.
 
 * twinExperimentGivenData.py
 
-Estimate initial states (x_0^((0)),…,x_(N-1)^((0) )) and parameters (p_0, p_1) given generated observed data file. Estimated result is shown compared to the true initial state and parameters.
+Estimate initial states and parameters given generated observed data file. Estimated result is shown compared to the true initial state and parameters.
 
 * twinExperimentIteration.py
 
