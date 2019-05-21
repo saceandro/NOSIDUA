@@ -9,7 +9,7 @@ Thus, systematic method which can provide confidence intervals (CIs) for estimat
 Our method incorporates four-dimensional variational (4D-Var) method and second-order adjoint techniques to infer initial states and parameters as well as their uncertainties of the ODE system from given data.
 
 ## Formulation and algorithm
-See algorithm.pdf.
+Please see algorithm.pdf.
 
 ## Dependency
 Python3
@@ -53,7 +53,7 @@ initial state and parameter covariance:
 mean RMSE around interval center:  0.1860385076639236
 ```
 
-## Write your model
+## Use your own model
 Edit src/model4DVar.py and fill in the blanks of calc_dxdt, calc_jacobian, and calc_hessian methods in the Model class.
 
 ## Assimilate your model with data
