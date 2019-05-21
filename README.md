@@ -2,52 +2,19 @@
 
 NOnlinear dynamical System IDentification with Uncertainty Assessment
 
+## Description
+Parameters of the ordinary differential equations (ODEs) carry important dynamical information for the biological systems.
+In most of the conventional biological studies, however, parameters were fixed or estimated using relatively heuristic methods such as evolutionary programming, and no credibility was provided.
+Thus, systematic method which can provide confidence intervals (CIs) for estimated parameters is awaited for biological systems.
+Our method incorporates four-dimensional variational (4D-Var) method and second-order adjoint techniques to infer initial states and parameters as well as their uncertainties of the ODE system from given data.
+
 ## Formulation and algorithm
 See algorithm.pdf.
 
-## Requirements
+## Dependency
 Python3
 
 Scipy, Numpy, Matplotlib
-
-## Write your model
-Edit src/model4DVar.py and fill in the blanks of calc_dxdt, calc_jacobian, and calc_hessian methods in the Model class.
-
-## Assimilate your model with data
-Use experimentUtil.assimilate to assimilate your model with data.
-In this method, 'bounds' is the initial state bounds followed by parameter bounds used for L-BFGS-B minimizer.
-Furthermore, you can use initial_guess_bounds to restrict the initial guess.
-Then, initial guesses for initial state and parameters will be generated using uniform distribution within initial_guess_bounds in each trials.
-An example of Lorenz96 data assimilation can be seen in src/discrete4DVarMain.py.
-
-## Codes in src directory
-* model4DVar.py
-
-ODE system with parameters.
-
-* discrete4DVar.py
-
-Core Adjoint class for initial states and parameters estimation.
-
-* discrete4DVarMain.py
-
-Estimate initial states and parameters given observed data file.
-
-* twinExperiment.py
-
-First, generate observed data using given model, true initial states, and parameters with white noise. Then estimate initial states and parameters given generated observed data. Estimated result is shown compared to the true initial state and parameters.
-
-* twinExperimentGivenData.py
-
-Estimate initial states and parameters given generated observed data file. Estimated result is shown compared to the true initial state and parameters.
-
-* twinExperimentIteration.py
-
-Same as twinExperiment.py, but iteratively conduct estimation using randomly selected initial states.
-
-* util.py
-
-Plotting utilities.
 
 ## Demo
 You can run demo in the jupyternotes/demo.ipynb
@@ -85,3 +52,42 @@ initial state and parameter covariance:
    0.00171005]]
 mean RMSE around interval center:  0.1860385076639236
 ```
+
+## Write your model
+Edit src/model4DVar.py and fill in the blanks of calc_dxdt, calc_jacobian, and calc_hessian methods in the Model class.
+
+## Assimilate your model with data
+Use experimentUtil.assimilate to assimilate your model with data.
+In this method, 'bounds' are the initial state bounds followed by parameter bounds used for L-BFGS-B minimizer.
+Furthermore, you can use initial_guess_bounds to restrict the initial guess.
+Then, initial guesses for initial state and parameters will be generated using uniform distribution within initial_guess_bounds in each trials.
+An example of Lorenz96 data assimilation can be seen in src/discrete4DVarMain.py.
+
+## Codes in src directory
+* model4DVar.py
+
+ODE system with parameters.
+
+* discrete4DVar.py
+
+Core Adjoint class for initial states and parameters estimation.
+
+* discrete4DVarMain.py
+
+Estimate initial states and parameters given observed data file.
+
+* twinExperiment.py
+
+First, generate observed data using given model, true initial states, and parameters with white noise. Then estimate initial states and parameters given generated observed data. Estimated result is shown compared to the true initial state and parameters.
+
+* twinExperimentGivenData.py
+
+Estimate initial states and parameters given generated observed data file. Estimated result is shown compared to the true initial state and parameters.
+
+* twinExperimentIteration.py
+
+Same as twinExperiment.py, but iteratively conduct estimation using randomly selected initial states.
+
+* util.py
+
+Plotting utilities.
